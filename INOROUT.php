@@ -23,7 +23,7 @@ function IsInsideThePolygon($point, $vertex)
 
         $j = ($i + 1) % $numOfVertex;
 
-        // Is the the ray intersects the edge (vertex[i],vertex[j])? 
+        // Does the the ray intersect the edge (vertex[i],vertex[j])?
         if ($point['y'] > min($vertex[$i]['y'], $vertex[$j]['y']) 
             && $point['y'] <= max($vertex[$i]['y'], $vertex[$j]['y'])
             && $point['x'] <= max($vertex[$i]['x'], $vertex[$j]['x'])
